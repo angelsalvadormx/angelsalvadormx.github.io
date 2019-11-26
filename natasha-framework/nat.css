@@ -62,7 +62,9 @@ h1, h2, h3, h4, h5 {
   top: 50%;
   transform: translate(-50%,-50%);
 }
-
+.center-margin{
+	margin: 0 auto;
+}
 /* Colors primary */
 
 .bg-primary {
