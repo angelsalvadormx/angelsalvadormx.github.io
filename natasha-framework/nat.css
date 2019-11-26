@@ -77,6 +77,9 @@ h1, h2, h3, h4, h5 {
 .t-color-white{
   color:#FFF!important;
 }
+.t-color-black{
+	color:#000;
+}
 /* Position */
 
 .position-static {
