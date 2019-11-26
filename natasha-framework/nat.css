@@ -31,10 +31,7 @@ h1, h2, h3, h4, h5 {
   padding: 0px 40px;
 }
 
-/*Text */
-.text-center{
-	text-align:center;
-}
+
 
 /* z-index */
 .z-index{
@@ -43,6 +40,9 @@ h1, h2, h3, h4, h5 {
 
 /* Text */
 
+.text-center{
+	text-align:center;
+}
 .text-primary {
   color: rgb(100, 255, 218);
   margin: 0px 0px 20px 3px;
@@ -72,7 +72,9 @@ h1, h2, h3, h4, h5 {
 .t-color-primary {
   color: rgb(204, 214, 246)
 }
-
+.t-color-white{
+  color:#FFF!important;
+}
 /* Position */
 
 .position-static {
