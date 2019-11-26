@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+ }
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.3;
+  font-family: Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  color: rgb(230, 241, 255);
+  margin: 0px 0px 10px;
+  line-height: 1.1;
+}
+
+.container {
+  padding: 0px 40px;
+}
+
+/* z-index */
+.z-index{
+  z-index: 3;
+}
+
+/* Text */
+
+.text-primary {
+  color: rgb(100, 255, 218);
+  margin: 0px 0px 20px 3px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.text-secondary {
+  font-size: 80px;
+  line-height: 1.1;
+  color: rgb(136, 146, 176);
+}
+
+/* Center */
+.center{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* Colors primary */
+
+.bg-primary {
+  background-color: #0a192f;
+}
+
+.t-color-primary {
+  color: rgb(204, 214, 246)
+}
+
+/* Position */
+
+.position-static {
+  position: static;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+/* Font-size */
+.t-size-13 {
+  font-size: 13px;
+}
+.t-size-80{
+  font-size: 80px;
+}
+/* Font family*/
+.font-primary{
+  font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
+}
+/* Padding */
+
+.p-5 {
+  padding: 1em;
+}
+
+.p-2 {
+  padding: .4em;
+}
+
+/* Display */
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+/* Margin */
+
+.ml-10 {
+  margin-left: 10px !important;
+}
+.m-0{
+  margin: 0 !important;
+}
+.mt-5{
+    margin-top:1em
+}
+/* border */
+
+.btn-border-primary {
+  border: 1px solid rgb(100, 255, 218);
+  border-radius: 3px;
+  padding: 0.75rem 1rem;
+  line-height: 1;
+}
+
+/* Flex */
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-araund {
+  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+/* size - width */
+
+.w-100 {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+@media (max-width:900px){
+  .t-size-80{
+    font-size: 70px;
+  }
+}
+
+@media (max-width:700px){
+  .t-size-80{
+    font-size: 60px;
+  }
+}
+
+
+
+
