@@ -268,7 +268,7 @@ body {
   bottom: 40px;
 }
 
-#home>footer>i {
+#home>footer i {
   background: url(../imagenes/sprite_scroll-home.svg) 4px -13px no-repeat;
   height: 66px;
   width: 108px;
@@ -375,11 +375,11 @@ body {
   font-size: 1.125em;
   line-height: 1.5em;
 }
-
+/*
 #concept-solution .img-process {
   width: 60%;
   margin-bottom: 50px;
-}
+}*/
 
 #concept-solution {
   padding-bottom: 90px;
