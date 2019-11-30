@@ -1,0 +1,243 @@
+/* width 1015 */
+
+@media screen and (max-width:1015px) {
+  .title {
+    padding-top: 50px;
+    font-size: 1.875em;
+  }
+  /* header */
+  #digital-products {
+    padding-bottom: 0;
+  }
+  #header nav {
+    position: fixed;
+    height: 100%;
+    background-color: #3a3030;
+    width: 50%;
+    top: 0;
+    right: -100%;
+    padding-top: 20px;
+
+  }
+  #header nav ul li{
+    margin-top: 15px;
+    padding-top: 0;
+  }
+    #header nav ul{
+    flex-direction: column;
+  }
+  #header>nav>ul>li:after{
+    display: none;
+  }
+  #header>nav>ul>li>a{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  #header .btn-menu {
+    display: block;
+  }
+  #header[activo="true"] {
+    height: 50px;
+  }
+  #header>picture {
+    background: url(../imagenes/sprite_home_desktop.svg) -166px -10px no-repeat;
+    background-size: auto;
+    height: 41px;
+    width: 217px;
+    background-size: 534px;
+    margin: 10px 0px;
+  }
+  /* Home */
+  .title-magma {
+    font-size: 1.875em;
+  }
+  #home>main ol, .subtitle-magma {
+    font-size: 1rem;
+  }
+  #home>main {
+    width: 75%;
+  }
+  #home .subtitle-magma {
+    padding-top: 10px;
+  }
+  /*digital products*/
+  #digital-products main {
+    flex-direction: column;
+    align-items: center;
+  }
+  #digital-products .card-item {
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    margin-top: 30px;
+    padding-bottom: 10px;
+  }
+  #digital-products .card-item main p {
+    font-size: 1rem;
+  }
+  /*concept  solution*/
+  .decription-section {
+    font-size: 1rem;
+  }
+  #concept-solution .img-process {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .title-magma {
+    font-size: 1.25em;
+  }
+  .subtitle-magma {
+    font-size: 13px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+  .decription-section, #home>main ol {
+    font-size: 13px;
+  }
+  .logo-magma {
+    display: block;
+  }
+  #header picture {
+    display: none;
+  }
+  #header[activo="true"] picture {
+    background: url(../imagenes/sprite_home_mobile.svg) -225px -15px no-repeat;
+    height: 32px;
+    width: 38px;
+    margin: 0 auto;
+    display: block;
+  }
+  #header .btn-menu {
+    position: absolute;
+    right: 0;
+  }
+  #home main {
+    left: 0;
+    top: 0;
+    transform: none;
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  #home {
+    background-image: url(../imagenes/home_hero@1x.jpg);
+  }
+  .container {
+    padding: 0 3px !important;
+  }
+  #digital-products h3 {
+    font-size: 1.5em;
+  }
+  #digital-products .card-item {
+    flex-direction: row;
+  }
+  .decription-section {
+    line-height: 1.5em;
+  }
+  .sect-web picture {
+    background: url(../imagenes/sprite_design_mobile_sprite.svg) -402px -208px no-repeat;
+    height: 77px;
+    width: 122px;
+  }
+  .sect-ecommerce picture {
+    background: url(../imagenes/sprite_desktop-tablet-mobile.svg) -472px -881px no-repeat;
+    height: 86px;
+    width: 109px;
+  }
+  .sect-ux picture {
+    background: url(../imagenes/sprite_design_mobile_sprite.svg) -38px -40px no-repeat;
+    height: 88px;
+    width: 127px;
+  }
+  .card-item header {
+    margin-left: 10px;
+    width: 25%;
+  }
+  .card-item main {
+    width: 75%;
+    padding-left: 50px;
+    text-align: left;
+  }
+  #digital-products h4 {
+    padding: 10px 0;
+    font-size: 1em;
+    margin: 0;
+    font-weight: 700;
+  }
+  #digital-products .card-item main p {
+    font-size: 13px;
+    margin: 0;
+  }
+  #digital-products .card-item main a {
+    margin: 10px 0;
+    display: block;
+  }
+  #digital-products .card-item {
+    margin-top: 10px;
+  }
+  #digital-products .card-item:nth-child(1) {
+    margin-top: 30px;
+  }
+  #concept-solution .img img {
+    display: none;
+  }
+  #concept-solution .img {
+    background: url(../imagenes/sprite_tablet-mobile-services.svg) -306px -736px no-repeat;
+    height: 128px;
+    width: 278px;
+    margin: 0 auto;
+  }
+  #home>main ol li {
+    margin-right: 15px;
+  }
+  #concept-solution h4 {
+    font-size: .8125em;
+    margin-bottom: 30px;
+  }
+  .img-process {
+    background: url(https://www.magmalabs.io/images/process-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 820px;
+    background-position: center;
+  }
+  .img-process img {
+    display: none;
+  }
+  .title {
+    margin: 0;
+  }
+  .sect-mobile picture {
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%) scale(.8, .8);
+  }
+}
+
+@media screen and (max-width:455px) {
+  #home>main ol li {
+    margin-bottom: 13px;
+    margin-right: 5px;
+  }
+  #home>main ol {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:265px) {
+  #concept-solution .img {
+    width: 243px;
+    background-position-x: -323px;
+  }
+  .img-process {
+    height: 242px;
+  }
+  #concept-solution footer {
+    padding: 0 18px;
+  }
+  #concept-solution footer .btn-magma{
+    overflow: hidden;
+  }
+}
