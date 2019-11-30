@@ -69,9 +69,7 @@ body {
 
 #header.active-menu {
   z-index: 6;
-  position: fixed;
-  background-color: transparent;
-  width: 100%;
+  background-color: transparent !important;
 }
 
 #header.active-menu nav {
@@ -80,9 +78,10 @@ body {
 
 #header .sec-social{
   margin-top: 50px;
+  
 }
 #header .sec-social i{
-  margin-left: 50px;
+  margin-right: 50px;
 }
 #header.active-menu nav ul li:last-child a {
   border: 2px solid #f84848;
@@ -96,9 +95,11 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-
+#header.active-menu > picture{
+  display: none !important;
+}
 #header nav .hide-menu,#header .sec-social, #header nav picture, #header.active-menu .btn-menu {
-  display: none;
+  display: none ;
 }
 
 #header.active-menu nav picture, #header.active-menu nav .hide-menu,#header.active-menu .sec-social {

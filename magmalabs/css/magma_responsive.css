@@ -17,19 +17,18 @@
     top: 0;
     right: -100%;
     padding-top: 20px;
-
   }
-  #header nav ul li{
+  #header nav ul li {
     margin-top: 15px;
     padding-top: 0;
   }
-    #header nav ul{
+  #header nav ul {
     flex-direction: column;
   }
-  #header>nav>ul>li:after{
+  #header>nav>ul>li:after {
     display: none;
   }
-  #header>nav>ul>li>a{
+  #header>nav>ul>li>a {
     width: 100%;
     display: inline-block;
     text-align: center;
@@ -84,7 +83,7 @@
   }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
   .title-magma {
     font-size: 1.25em;
   }
@@ -98,6 +97,15 @@
   }
   .logo-magma {
     display: block;
+  }
+  /* Header */
+  #header nav {
+    width: 70%;
+  }
+  #header nav .sec-social {
+    position: absolute;
+    width: 100%;
+    bottom: 41px;
   }
   #header picture {
     display: none;
@@ -216,6 +224,16 @@
   }
 }
 
+@media screen and (max-width:480px) {
+  #header nav {
+    width: 90%;
+  }
+  #header nav .sec-social {
+    position: initial;
+  }
+
+}
+
 @media screen and (max-width:455px) {
   #home>main ol li {
     margin-bottom: 13px;
@@ -237,7 +255,7 @@
   #concept-solution footer {
     padding: 0 18px;
   }
-  #concept-solution footer .btn-magma{
+  #concept-solution footer .btn-magma {
     overflow: hidden;
   }
 }
