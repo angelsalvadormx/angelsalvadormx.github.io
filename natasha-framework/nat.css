@@ -31,7 +31,16 @@ h1, h2, h3, h4, h5 {
   padding: 0px 40px;
 }
 
-
+/* Background */
+.bkg-image{
+  background-repeat: no-repeat;
+}
+.bkg-image-center{
+  background-position: center;
+}
+.bkg-image-cover{
+  background-size: cover;
+}
 
 /* z-index */
 .z-index{
