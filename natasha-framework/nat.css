@@ -77,6 +77,7 @@ h1, h2, h3, h4, h5 {
   color: rgb(136, 146, 176);
 }
 
+
 /* Center */
 
 .center {
@@ -139,6 +140,21 @@ h1, h2, h3, h4, h5 {
 
 .font-primary {
   font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
+}
+
+
+/*  */
+.top-0{
+  top:0;
+}
+.left-0{
+  left: 0;
+}
+.bottom-0{
+  bottom: 0;
+}
+.right-0{
+  right: 0;
 }
 
 /* Padding */
