@@ -1,7 +1,8 @@
 * {
   padding: 0;
   margin: 0;
- }
+}
+
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -32,26 +33,31 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Background */
-.bkg-image{
+
+.bkg-image {
   background-repeat: no-repeat;
 }
-.bkg-image-center{
+
+.bkg-image-center {
   background-position: center;
 }
-.bkg-image-cover{
+
+.bkg-image-cover {
   background-size: cover;
 }
 
 /* z-index */
-.z-index{
+
+.z-index {
   z-index: 3;
 }
 
 /* Text */
 
-.text-center{
-	text-align:center;
+.text-center {
+  text-align: center;
 }
+
 .text-primary {
   color: rgb(100, 255, 218);
   margin: 0px 0px 20px 3px;
@@ -66,14 +72,17 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Center */
-.center{
+
+.center {
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-.center-margin{
-	margin: 0 auto;
+
+.center-margin {
+  margin: 0 auto;
 }
+
 /* Colors primary */
 
 .bg-primary {
@@ -83,12 +92,15 @@ h1, h2, h3, h4, h5 {
 .t-color-primary {
   color: rgb(204, 214, 246)
 }
-.t-color-white{
-  color:#FFF!important;
+
+.t-color-white {
+  color: #FFF!important;
 }
-.t-color-black{
-	color:#000;
+
+.t-color-black {
+  color: #000;
 }
+
 /* Position */
 
 .position-static {
@@ -108,17 +120,34 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Font-size */
+
 .t-size-13 {
   font-size: 13px;
 }
-.t-size-80{
+
+.t-size-80 {
   font-size: 80px;
 }
+
 /* Font family*/
-.font-primary{
+
+.font-primary {
   font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
 }
+
 /* Padding */
+
+.p-6em {
+  padding: 6em;
+}
+
+.pr-2em {
+  padding-right: 2em;
+}
+
+.pl-2em {
+  padding-left: 2em;
+}
 
 .p-5 {
   padding: 1em;
@@ -143,12 +172,15 @@ h1, h2, h3, h4, h5 {
 .ml-10 {
   margin-left: 10px !important;
 }
-.m-0{
+
+.m-0 {
   margin: 0 !important;
 }
-.mt-5{
-    margin-top:1em
+
+.mt-5 {
+  margin-top: 1em
 }
+
 /* border */
 
 .btn-border-primary {
@@ -197,6 +229,7 @@ h1, h2, h3, h4, h5 {
 .w-100 {
   width: 100%;
 }
+
 .w-50 {
   width: 50%;
 }
@@ -214,34 +247,35 @@ h1, h2, h3, h4, h5 {
 }
 
 /* size - height*/
+
 .h-100 {
   height: 100%;
 }
-.h-80{
+
+.h-80 {
   height: 80%;
 }
-.h-70{
+
+.h-70 {
   height: 70%;
 }
-.h-60{
+
+.h-60 {
   height: 60%;
 }
-.h-50{
+
+.h-50 {
   height: 50%;
 }
 
-@media (max-width:900px){
-  .t-size-80{
+@media (max-width:900px) {
+  .t-size-80 {
     font-size: 70px;
   }
 }
 
-@media (max-width:700px){
-  .t-size-80{
+@media (max-width:700px) {
+  .t-size-80 {
     font-size: 60px;
   }
 }
-
-
-
-
