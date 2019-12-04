@@ -213,8 +213,21 @@ h1, h2, h3, h4, h5 {
   width: 10%;
 }
 
+/* size - height*/
 .h-100 {
   height: 100%;
+}
+.h-80{
+  height: 80%;
+}
+.h-70{
+  height: 70%;
+}
+.h-60{
+  height: 60%;
+}
+.h-50{
+  height: 50%;
 }
 
 @media (max-width:900px){
