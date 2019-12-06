@@ -1,7 +1,8 @@
 # I'm Full stack Developer 
 
 [Angel Salvador](https://github.com/angelsalvadormx)
-[My CV](https://angelsalvadormx.github.io/personal-web-page/)
+[My CV](https://angelsalvadormx.github.io/curriculum/en/)
+* Available just desktop version
 ## Fun Animations
 [3D Cube](https://angelsalvadormx.github.io/Fun-animations/cube/cube_3D.html)
 
