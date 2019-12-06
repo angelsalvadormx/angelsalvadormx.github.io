@@ -488,7 +488,7 @@ h4 {
  background-color:#0c84e4
 }
 .resume__container {
- /*padding:80px 0*/
+ padding:80px 0
 }
 @media (max-width: 767px) {
  .resume__container {
