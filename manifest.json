@@ -1,0 +1,13 @@
+{
+ "short_name":"Angel Salvador Web site",
+ "name":"Angel Salvador",
+ "start_url":"/?utm_source=homescreen",
+ "icons":[
+   {
+     "src":"images/icons/icon.jpg",
+     "type":"image/jpg",
+     "sizes": "128x128"
+   }
+ ],
+ "theme_color": "#2196F3"
+}
