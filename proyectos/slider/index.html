@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Slider</title>
+  <link rel="stylesheet" href="slider.css">
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="slider" class="slider">
+    <article class="item-slider image-text"></article>
+  </section>
+  <script src="slider.js"></script>
+  <script>
+    Slider({
+      id: 'slider',
+      time: 2000,
+      autoPlay: true,
+      items: [
+        {
+          text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ducimus veritatis accusantium reprehenderit iusto',
+          image:'./images/image1.jpg'
+        },
+        {
+          image:'./images/image2.jpg',
+          text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ducimus veritatis accusantium reprehenderit iusto'
+        }
+      ]
+    })
+  </script>
+</body>
+
+</html>

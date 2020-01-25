@@ -1,0 +1,79 @@
+/*
+ Autor: Angel Salvador 
+ @angelsalvadormx
+*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  font-size: 3.75em;
+  text-transform: uppercase;
+  letter-spacing: -0.075rem;
+}
+
+.description{
+  color: rgba(255,255,255,0.78);
+  letter-spacing: 0.025rem;
+  width: calc(100% + 0.025rem);
+  font-size: 1em;
+  line-height: 2;
+  font-weight: 300;
+}
+.container{
+  padding: 0 6em;
+}
+.divider{
+  width: 15%;
+  height: 5px;
+  margin: 20px 0;
+}
+.divider-c-yellow{
+  background-color: yellow;
+}
+.divider-c-green{
+  background-color: #00FFD1;
+}
+
+
+/* Home */
+#home {
+  /*
+    background-color: #1f0735;
+  */
+  border-bottom: 10px solid yellow;
+}
+#home main h1{
+  text-shadow: 3px 3px 7px rgba(0,0,0,.7);
+  letter-spacing: 2px;
+}
+#home main p{
+  text-shadow: 2px 2px 2px rgba(0,0,0,.7);
+}
+#banner .layer{
+  display: none !important;
+}
+#home main p {
+  font-size: 1.25em;
+}
+
+/*layer*/
+
+.layer {
+  /* background-color: rgba(65, 32, 109, 0.27); */
+  background-color: rgba(32, 30, 82, 0.2);
+}
+.layer-green{
+  background: linear-gradient(to top, rgba(43,50,94,0.2), rgba(43,50,94,0.2));
+}
+
+/* section */
+#sec-1{
+  border-bottom: 10px solid #00FFD1;
+} 
