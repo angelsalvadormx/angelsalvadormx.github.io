@@ -1,17 +1,42 @@
 var interval;
 
 function banner(conf){
-    setBanner(conf.items);
+    var banner = document.getElementById(conf.id);
+    setBanner(conf,banner);
     
+    if(conf.hasOwnProperty('buttons') && conf.buttons === true){
+        buttons(banner);
+    }
     interval = setInterval(function(){
-        changeOrder();
+        changeOrder('next');
     },conf.time)
 }
 
-function setBanner(items){
-    var banner = document.getElementById('banner');
+
+function buttons(banner){
+    var btnNext = createButton('btn_next');
+    var btnPrevious = createButton()
+    btnNext.addEventListener('click',function(){
+        changeOrder('next');
+    })
+    btnPrevious.addEvenListener('click',function(){
+        changeOrder('previous');
+    });
+}
+
+
+
+function createButton(className){
+    var button = document.createElemnt('i');
+    button.classList.add('className');
+    return button;
+}
+
+function setBanner(conf,banner){
+    
     var myClass,classInfo;
     var element = document.createElement('section');
+    var items = conf.items;
     
     element.classList.add('layer');
     banner.insertAdjacentElement('afterbegin',element);
@@ -55,15 +80,20 @@ function setBanner(items){
     });
 }
 
-function changeOrder(){
+function changeOrder(direccion){
     var items = document.getElementsByClassName('item-banner');
     var index = parseInt(findActive(items));
-
-    var cont = index+1;
-    
-    if(items[cont] == undefined){
-        cont = 0;
+    if(direccion == 'next'){
+        index++;
+    }else if(direccion == 'previous'){
+        index--;
     }
+    var cont = index;
+    if(cont < 0){
+        cont = items.length-1;
+    }else if(items[cont] == undefined){
+        cont = 0;
+        }
 
     items[index].classList.remove('active');
     items[index].classList.add('left');
@@ -83,7 +113,6 @@ function showInfobanner(index){
     var items = document.getElementsByClassName('info-item');
     var found = findActive(items);
 
-    
     if(found != undefined && index != found){
         items[found].classList.remove('active');
     }
