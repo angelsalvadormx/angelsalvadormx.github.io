@@ -1,6 +1,6 @@
 # I'm Full stack Developer 
 
-[Angel Salvador](https://angelsalvadormx.coddy.com.mx/)
+#### [Angel Salvador](https://angelsalvadormx.coddy.com.mx/)
 [My CV](https://angelsalvadormx.github.io/curriculum/index.html)
 * Available just desktop version
 ## Fun Animations
