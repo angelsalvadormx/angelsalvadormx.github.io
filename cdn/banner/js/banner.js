@@ -19,7 +19,7 @@ function createInterval(time){
 
 function buttons(banner,time){
     var btnNext = createButton('btn_next');
-    var btnPrevious = createButton()
+    var btnPrevious = createButton();
     btnNext.addEventListener('click',function(){
         changeOrder('next');
         createInterval(time)
@@ -28,6 +28,8 @@ function buttons(banner,time){
         changeOrder('previous');
         createInterval(time)
     });
+    banner.insertAdjacentElement('afterbegin',btnNext);
+    banner.insertAdjacentElement('afterbegin',btnPrevious);
 }
 
 
@@ -98,7 +100,6 @@ function changeOrder(direction){
             cont = index-1;
         }
     }
-    //console.log('cont',cont);
     if(cont < 0){
         cont = items.length-1;
     }else{ 
@@ -106,7 +107,6 @@ function changeOrder(direction){
             cont = 0;
         }  
     }
-    console.log('cont',cont);
     
     items[index].classList.remove('active');
     items[index].classList.add('left');
