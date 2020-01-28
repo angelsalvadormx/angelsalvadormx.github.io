@@ -19,7 +19,7 @@ function createInterval(time){
 
 function buttons(banner,time){
     var btnNext = createButton('btn_next');
-    var btnPrevious = createButton();
+    var btnPrevious = createButton('btn-previous');
     btnNext.addEventListener('click',function(){
         changeOrder('next');
         createInterval(time)
