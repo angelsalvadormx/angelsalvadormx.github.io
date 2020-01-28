@@ -85,18 +85,19 @@ function changeOrder(direction){
     console.log(direction)
     var items = document.getElementsByClassName('item-banner');
     var index = parseInt(findActive(items));
+    var cont = 0;
     if(direction == 'next'){
-        index++;
+        cont = index+1;
     }else if(direction == 'previous'){
-        index--;
+        cont = index-1;
     }
-    var cont = index;
+    console.log('cont',cont);
     if(cont < 0){
         cont = items.length-1;
     }else if(items[cont] == undefined){
         cont = 0;
-        }
-
+    }
+    
     items[index].classList.remove('active');
     items[index].classList.add('left');
 
