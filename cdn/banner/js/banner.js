@@ -9,6 +9,7 @@ function banner(conf){
     }
     interval = setInterval(function(){
         changeOrder('next');
+        console.log('interval');
     },conf.time)
 }
 
