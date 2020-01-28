@@ -5,7 +5,7 @@ function banner(conf){
     setBanner(conf,banner);
     
     if(conf.hasOwnProperty('buttons') && conf.buttons === true){
-        buttons(banner);
+        buttons(banner,conf.time);
     }
     createInterval(conf.time);
 }
@@ -17,14 +17,16 @@ function createInterval(time){
     },time)
 }
 
-function buttons(banner){
+function buttons(banner,time){
     var btnNext = createButton('btn_next');
     var btnPrevious = createButton()
     btnNext.addEventListener('click',function(){
         changeOrder('next');
+        createInterval(time)
     })
     btnPrevious.addEvenListener('click',function(){
         changeOrder('previous');
+        createInterval(time)
     });
 }
 
