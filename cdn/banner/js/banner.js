@@ -80,12 +80,13 @@ function setBanner(conf,banner){
     });
 }
 
-function changeOrder(direccion){
+function changeOrder(direction){
+    console.log(direction)
     var items = document.getElementsByClassName('item-banner');
     var index = parseInt(findActive(items));
-    if(direccion == 'next'){
+    if(direction == 'next'){
         index++;
-    }else if(direccion == 'previous'){
+    }else if(direction == 'previous'){
         index--;
     }
     var cont = index;
