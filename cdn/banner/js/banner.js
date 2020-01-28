@@ -7,12 +7,15 @@ function banner(conf){
     if(conf.hasOwnProperty('buttons') && conf.buttons === true){
         buttons(banner);
     }
-    interval = setInterval(function(){
-        changeOrder('next');
-        console.log('interval');
-    },conf.time)
+    createInterval(conf.time);
 }
 
+function createInterval(time){
+    window.clearInterval(interval)
+    interval = setInterval(function(){
+        changeOrder('next');
+    },time)
+}
 
 function buttons(banner){
     var btnNext = createButton('btn_next');
