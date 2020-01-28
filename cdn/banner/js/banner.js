@@ -88,8 +88,10 @@ function changeOrder(direction){
     var cont = 0;
     if(direction == 'next'){
         cont = index+1;
-    }else if(direction == 'previous'){
-        cont = index-1;
+    }else{
+        if(direction == 'previous'){
+            cont = index-1;
+        }
     }
     console.log('cont',cont);
     if(cont < 0){
