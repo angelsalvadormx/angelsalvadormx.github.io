@@ -93,12 +93,13 @@ function changeOrder(direction){
             cont = index-1;
         }
     }
-    console.log('cont',cont);
+    //console.log('cont',cont);
     if(cont < 0){
         cont = items.length-1;
     }else if(items[cont] == undefined){
         cont = 0;
     }
+    console.log('cont',cont);
     
     items[index].classList.remove('active');
     items[index].classList.add('left');
