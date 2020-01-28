@@ -96,8 +96,10 @@ function changeOrder(direction){
     //console.log('cont',cont);
     if(cont < 0){
         cont = items.length-1;
-    }else if(items[cont] == undefined){
-        cont = 0;
+    }else{ 
+        if(items[cont] == undefined){
+            cont = 0;
+        }  
     }
     console.log('cont',cont);
     
