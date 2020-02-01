@@ -1,6 +1,8 @@
 var interval;
 
 function banner(conf){
+    console.log(conf);
+    
     var banner = document.getElementById(conf.id);
     setBanner(conf,banner);
     
@@ -18,12 +20,14 @@ function createInterval(time){
 }
 
 function buttons(banner,time){
+    console.log('entra');
+    
     var btnNext = createButton('btn_next');
     var btnPrevious = createButton('btn-previous');
     btnNext.addEventListener('click',function(){
         changeOrder('next');
         createInterval(time)
-    })
+    });
     btnPrevious.addEvenListener('click',function(){
         changeOrder('previous');
         createInterval(time)
