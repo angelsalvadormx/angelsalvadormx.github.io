@@ -28,7 +28,7 @@ function buttons(banner,time){
         changeOrder('next');
         createInterval(time)
     });
-    btnPrevious.addEvenListener('click',function(){
+    btnPrevious.addEventListener('click',function(){
         changeOrder('previous');
         createInterval(time)
     });
@@ -39,8 +39,8 @@ function buttons(banner,time){
 
 
 function createButton(className){
-    var button = document.createElemnt('i');
-    button.classList.add('className');
+    var button = document.createElement('i');
+    button.classList.add(className);
     return button;
 }
 
