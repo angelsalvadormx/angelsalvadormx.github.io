@@ -9,21 +9,21 @@ body{
 .hidden{
   display: none !important;
 }
-#banner{
+.banner{
   position: relative;
   width: 100%;
   overflow: hidden;
   height: 70%;
   min-height: 350px;
 }
-#banner .layer{
+.banner .layer{
   position: absolute;
   z-index: 3;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,.5);
 }
-#banner .item-banner{
+.banner .item-banner{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -31,23 +31,24 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   transition: all .8s ease-in-out;
+  z-index: 1;
 }
-#banner .item-banner.active{
+.banner .item-banner.active{
   left: 0 !important;
   z-index: 2;
 }
 
-#banner .item-banner.left{
+.banner .item-banner.left{
   left: -100%;
 }
-#banner .item-banner.right{
+.banner .item-banner.right{
   left: 100%;
 }
-#banner .item-banner.right,
-#banner .item-banner.left{
-  z-index: -1;
+.banner .item-banner.right,
+.banner .item-banner.left{
+  z-index: -2 !important;
 }
-#banner .info-item{
+.banner .info-item{
  position: absolute;
  top: 50%;
  left: 10%;
@@ -72,16 +73,16 @@ body{
  flex-direction: column;
  justify-content: center;
 }
-#banner .info-item header{
+.banner .info-item header{
     text-align: center;
 }
-#banner .info-item main p{
+.banner .info-item main p{
   font-size: 15px;
 }
-#banner .info-item.active{
+.banner .info-item.active{
   opacity: 1 !important;
 }
-#banner .divider{
+.banner .divider{
  display: block;
  width: 30%;
  height: 2px;
@@ -93,46 +94,81 @@ body{
  border-radius: 4px;
 }
 
+/* botones banner */
+.banner .btn_next{
+  right: 20px;
+}
+.banner .btn_previous{
+  left: 20px;
+}
+.banner .btn_previous::after,
+.banner .btn_next::after{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color:#FFF;
+}
+
+.banner .btn_next::after{
+  content: "\2192";
+}
+.banner .btn_previous::after{
+  content: "\2190";
+}
+
+.banner .btn_next,
+.banner .btn_previous{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  z-index: 4;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 @media screen and (max-width:1000px){
-  #banner .info-item{
+  .banner .info-item{
     left: 5%;
   }
 }
 @media screen and (max-width:800px){
   
-  #banner .info-item main p,
-  #banner .info-item{
+  .banner .info-item main p,
+  .banner .info-item{
     font-size: 14px;
   }
-  #banner .info-item{
+  .banner .info-item{
     width: 360px;
     height: 240px;
   }
 }
 @media screen and (max-width:400px){
-  #banner .info-item{
+  .banner .info-item{
     width: 90%;
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 25px;
   }
-  #banner .divider{
+  .banner .divider{
     margin: 15px 0;
   }
 }
 
 @media screen and (max-width:300px){
-  #banner .info-item{
+  .banner .info-item{
     height: 65%;
   }
 }
 
 @media screen and (max-width:235px){
-  #banner .info-item{
+  .banner .info-item{
     height: 80%;
     padding: 15px;
   }
-  #banner .divider{
+  .banner .divider{
     margin: 10px 0; 
   }
 }

@@ -20,10 +20,9 @@ function createInterval(time){
 }
 
 function buttons(banner,time){
-    console.log('entra');
     
     var btnNext = createButton('btn_next');
-    var btnPrevious = createButton('btn-previous');
+    var btnPrevious = createButton('btn_previous');
     btnNext.addEventListener('click',function(){
         changeOrder('next');
         createInterval(time)
@@ -35,8 +34,6 @@ function buttons(banner,time){
     banner.insertAdjacentElement('afterbegin',btnNext);
     banner.insertAdjacentElement('afterbegin',btnPrevious);
 }
-
-
 
 function createButton(className){
     var button = document.createElement('i');
@@ -51,6 +48,7 @@ function setBanner(conf,banner){
     var items = conf.items;
     
     element.classList.add('layer');
+    banner.classList.add('banner');
     banner.insertAdjacentElement('afterbegin',element);
 
     Object.keys(items).forEach(function(key,i){
@@ -80,7 +78,6 @@ function setBanner(conf,banner){
                 <main><p>${items[key].content_card} </p></main>
             `;
         }
-            
 
         banner.innerHTML += `
             <section class="item-banner ${myClass}" style="background-image:url(${items[key].image});"></section>
@@ -133,9 +130,7 @@ function showInfobanner(index){
     if(found != undefined && index != found){
         items[found].classList.remove('active');
     }
-    
     items[index].classList.add('active');
-    
 }
 
 function findActive(items){
