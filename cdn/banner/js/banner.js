@@ -1,7 +1,6 @@
 var interval;
-
+var stop = false;
 function banner(conf){
-    console.log(conf);
     
     var banner = document.getElementById(conf.id);
     setBanner(conf,banner);
@@ -24,8 +23,12 @@ function buttons(banner,time){
     var btnNext = createButton('btn_next');
     var btnPrevious = createButton('btn_previous');
     btnNext.addEventListener('click',function(){
-        changeOrder('next');
-        createInterval(time)
+        if(!stop){
+            console.log('click');
+            
+            changeOrder('next');
+            createInterval(time);
+        }
     });
     btnPrevious.addEventListener('click',function(){
         changeOrder('previous');
@@ -90,7 +93,7 @@ function setBanner(conf,banner){
 }
 
 function changeOrder(direction){
-    console.log(direction)
+    stop = true;
     var items = document.getElementsByClassName('item-banner');
     var index = parseInt(findActive(items));
     var cont = 0;
@@ -119,7 +122,13 @@ function changeOrder(direction){
     items[cont].addEventListener('transitionend',function(){
         items[index].classList.remove('left');
         items[index].classList.add('right');
+        stop = false;
+    },{
+        once:true
     });
+}
+
+function changeClass(index){
 
 }
 
