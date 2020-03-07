@@ -3,18 +3,19 @@ var stop = false;
 function banner(conf){
     
     var banner = document.getElementById(conf.id);
+    console.log(banner)
     setBanner(conf,banner);
     
     if(conf.hasOwnProperty('buttons') && conf.buttons === true){
         buttons(banner,conf.time);
     }
-    createInterval(conf.time);
+    createInterval(conf.time,banner);
 }
 
-function createInterval(time){
+function createInterval(time,banner){
     window.clearInterval(interval)
     interval = setInterval(function(){
-        changeOrder('next');
+        changeOrder('next',banner);
     },time)
 }
 
@@ -23,16 +24,15 @@ function buttons(banner,time){
     var btnNext = createButton('btn_next');
     var btnPrevious = createButton('btn_previous');
     btnNext.addEventListener('click',function(){
+        console.log(this)
         if(!stop){
-            console.log('click');
-            
-            changeOrder('next');
-            createInterval(time);
+            changeOrder('next',banner);
+            createInterval(time,banner);
         }
     });
     btnPrevious.addEventListener('click',function(){
-        changeOrder('previous');
-        createInterval(time)
+        changeOrder('previous',banner);
+        createInterval(time,banner);
     });
     banner.insertAdjacentElement('afterbegin',btnNext);
     banner.insertAdjacentElement('afterbegin',btnPrevious);
@@ -45,7 +45,6 @@ function createButton(className){
 }
 
 function setBanner(conf,banner){
-    
     var myClass,classInfo;
     var element = document.createElement('section');
     var items = conf.items;
@@ -65,6 +64,8 @@ function setBanner(conf,banner){
 
         if(!items[key].hasOwnProperty('title_card') && !items[key].hasOwnProperty('content_card')){
             classInfo += " hidden";
+        }else{
+            
         }
         
         if(items[key].hasOwnProperty('title_card')){
@@ -92,9 +93,12 @@ function setBanner(conf,banner){
     });
 }
 
-function changeOrder(direction){
+function changeOrder(direction,banner){
+    console.log('banner',banner);
+    console.log(banner.getElementsByClassName('item-banner'));
+    
     stop = true;
-    var items = document.getElementsByClassName('item-banner');
+    var items = banner.getElementsByClassName('item-banner');
     var index = parseInt(findActive(items));
     var cont = 0;
     if(direction == 'next'){
@@ -126,10 +130,6 @@ function changeOrder(direction){
     },{
         once:true
     });
-}
-
-function changeClass(index){
-
 }
 
 function showInfobanner(index){
