@@ -2,7 +2,7 @@
 
 #### [Angel Salvador](https://angelsalvadormx.coddy.com.mx/)
 [My CV](https://angelsalvadormx.github.io/curriculum/index.html)
-* Available just desktop version
+* Available just for desktop
 ## Fun Animations
 [3D Cube](https://angelsalvadormx.github.io/proyectos/animations-css/cube/cube_3D.html)
 
