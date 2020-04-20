@@ -1,22 +1,23 @@
 var interval;
 var stop = false;
-function banner(conf){
-    
-    var banner = document.getElementById(conf.id);
-    console.log(banner)
-    setBanner(conf,banner);
-    
-    if(conf.hasOwnProperty('buttons') && conf.buttons === true){
-        buttons(banner,conf.time);
-    }
-    createInterval(conf.time,banner);
+function banner(settings){
+    settings.forEach(function(conf){
+        var banner = document.getElementById(conf.id);
+        console.log(banner)
+        setBanner(conf,banner);
+        
+        if(conf.hasOwnProperty('buttons') && conf.buttons === true){
+            buttons(banner,conf.time);
+        }
+        createInterval(conf.time,banner);
+    });
 }
 
 function createInterval(time,banner){
     window.clearInterval(interval)
     interval = setInterval(function(){
         changeOrder('next',banner);
-    },time)
+    },time);
 }
 
 function buttons(banner,time){
@@ -27,12 +28,12 @@ function buttons(banner,time){
         console.log(this)
         if(!stop){
             changeOrder('next',banner);
-            createInterval(time,banner);
+            //createInterval(time,banner);
         }
     });
     btnPrevious.addEventListener('click',function(){
         changeOrder('previous',banner);
-        createInterval(time,banner);
+        //createInterval(time,banner);
     });
     banner.insertAdjacentElement('afterbegin',btnNext);
     banner.insertAdjacentElement('afterbegin',btnPrevious);

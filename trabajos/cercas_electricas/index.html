@@ -36,7 +36,7 @@
       <!--section class="w-50 bkg-image bkg-image-center bkg-image-cover position-relative" style="background-image: url('./images/image12.jpg');">
         <article class="w-100 h-100 z-index-5 layer position-absolute top-0 left-0"></article>
       </section-->
-      <article id="banner2" class="h-100"></article>
+      <article id="banner2" class="h-100 w-50"></article>
       <section class="w-50 h-50 position-relative bkg-color-white container center-y">
         <h2 class="t-color-black t-size-2em">Malla ciclonica</h2>
         <div class="d-block divider divider-c-yellow"></div>
@@ -69,38 +69,59 @@
   <!-- Banner -->
   <script src="../../cdn/banner/js/banner.js"></script>
   <script>
-    banner({
-      time: 8000,
-      id: 'banner',
-      buttons: true,
-      items: [
-        {
-          image: 'images/image.jpg'
-        },
-        {
-          image: 'images/image2.jpg'
-        },
-        {
-          image: 'images/image3.jpg'
-        }
-      ]
-    });
-    banner({
-      time: 8000,
-      id: 'banner2',
-      buttons: true,
-      items: [
-        {
-          image: 'images/image.jpg'
-        },
-        {
-          image: 'images/image2.jpg'
-        },
-        {
-          image: 'images/image3.jpg'
-        }
-      ]
-    });
+    banner(
+    [
+      {
+        time: 3000,
+        id: 'banner',
+        buttons: true,
+        autoPlay: true,
+        items: [
+          {
+            image: 'images/image.jpg'
+          },
+          {
+            image: 'images/image2.jpg'
+          },
+          {
+            image: 'images/image3.jpg'
+          }
+        ]
+      },
+      {
+        time: 2000,
+        id: 'banner2',
+        buttons: true,
+        items: [
+          {
+            image: 'images/image.jpg'
+          },
+          {
+            image: 'images/image2.jpg'
+          },
+          {
+            image: 'images/image3.jpg'
+          }
+        ]
+      }
+    ]);
+
+    // banner({
+    //   time: 2000,
+    //   id: 'banner2',
+    //   buttons: true,
+    //   items: [
+    //     {
+    //       image: 'images/image.jpg'
+    //     },
+    //     {
+    //       image: 'images/image2.jpg'
+    //     },
+    //     {
+    //       image: 'images/image3.jpg'
+    //     }
+    //   ]
+    // });
   </script>
 </body>
 
