@@ -1,40 +1,83 @@
-var interval;
+var intervals = [];
 var stop = false;
+var num_banners = 0;
 function banner(settings){
+    num_banners = settings.length;
     settings.forEach(function(conf){
         var banner = document.getElementById(conf.id);
-        console.log(banner)
         setBanner(conf,banner);
         
         if(conf.hasOwnProperty('buttons') && conf.buttons === true){
             buttons(banner,conf.time);
         }
-        createInterval(conf.time,banner);
+        createInterval(banner,settings.length);
     });
 }
 
-function createInterval(time,banner){
-    window.clearInterval(interval)
-    interval = setInterval(function(){
-        changeOrder('next',banner);
-    },time);
+function createInterval(banner){
+    console.log('===============================');
+    
+    //window.clearInterval(interval)
+    var banner2 = document.getElementById('banner2');
+    console.log('index 2',banner2);
+    
+    var time = banner.getAttribute('time_interval');
+    
+    var index_interval = banner.getAttribute('index_interval');
+    console.log('banner',banner);
+    console.log('index_interval',index_interval );
+    console.log('intervals.length',intervals.length);
+    console.log('num_banners',num_banners);
+        
+    if(index_interval === null){
+        console.log('entra');
+        if(intervals.length < num_banners){
+            banner.setAttribute('index_interval',intervals.length);
+            intervals.push(setInterval(function(){
+                changeItem('next',banner,false);
+            },time));
+        }
+    }else{
+        var interval = setInterval(function(){
+            changeItem('next',banner,false);
+        },time);
+        intervals[index_interval] = interval;
+    }
+    console.log('intervals',intervals);
 }
 
-function buttons(banner,time){
+function removeInterval(index_interval){
+    console.log('********************');
     
+    console.log('(-) intervals',intervals);
+    console.log('index_interval',index_interval);
+    
+    window.clearInterval(intervals[index_interval]);
+}
+
+
+function buttons(banner,time){
     var btnNext = createButton('btn_next');
     var btnPrevious = createButton('btn_previous');
     btnNext.addEventListener('click',function(){
-        console.log(this)
+        console.log('click');
+        console.log('stop',stop);
+        
         if(!stop){
-            changeOrder('next',banner);
+            changeItem('next',banner,true);
+            //createInterval(time,banner);
+        }
+    },{
+        once:true
+    });
+
+    btnPrevious.addEventListener('click',function(){
+        if(!stop){
+            changeItem('previous',banner,true);
             //createInterval(time,banner);
         }
     });
-    btnPrevious.addEventListener('click',function(){
-        changeOrder('previous',banner);
-        //createInterval(time,banner);
-    });
+    
     banner.insertAdjacentElement('afterbegin',btnNext);
     banner.insertAdjacentElement('afterbegin',btnPrevious);
 }
@@ -53,7 +96,7 @@ function setBanner(conf,banner){
     element.classList.add('layer');
     banner.classList.add('banner');
     banner.insertAdjacentElement('afterbegin',element);
-
+    banner.setAttribute('time_interval',conf.time);
     Object.keys(items).forEach(function(key,i){
         myClass = 'right';
         classInfo = '';
@@ -94,10 +137,11 @@ function setBanner(conf,banner){
     });
 }
 
-function changeOrder(direction,banner){
-    console.log('banner',banner);
-    console.log(banner.getElementsByClassName('item-banner'));
+function changeItem(direction,banner,clickOnButton){
     
+    if(clickOnButton === true){
+        removeInterval(banner.getAttribute('index_interval'));
+    }
     stop = true;
     var items = banner.getElementsByClassName('item-banner');
     var index = parseInt(findActive(items));
@@ -124,14 +168,20 @@ function changeOrder(direction,banner){
     items[cont].classList.remove('right');
 
     showInfobanner(cont);
+   
     items[cont].addEventListener('transitionend',function(){
         items[index].classList.remove('left');
         items[index].classList.add('right');
         stop = false;
+        // removeEventListener('transitionend', foo);
+        if(clickOnButton === true){
+            createInterval(banner);
+        }
     },{
         once:true
     });
 }
+
 
 function showInfobanner(index){
     var items = document.getElementsByClassName('info-item');
