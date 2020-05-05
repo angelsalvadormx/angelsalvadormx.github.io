@@ -1,7 +1,14 @@
 function banner(itemsBanner){
-    itemsBanner.forEach(function(item) {
-        setBanner(item);
+    itemsBanner.forEach(function(banner) {
+        banner = setBanner(banner);
+        createTimeOut(banner.time,banner);
     });
+}
+
+function createTimeOut(time,banner){
+    setTimeout(function(){
+        changeItem(banner,'');
+    },time);
 }
 
 function setBanner(banner){
@@ -19,6 +26,7 @@ function setBanner(banner){
         itemBanner = createItemBanner(item.image,classPositon);
         banner.elementBanner.insertAdjacentElement('beforeend',itemBanner);
     });
+    return banner;
 }
 
 function createItemBanner(image,classPositon){
@@ -35,3 +43,37 @@ function createLayer(){
     return layer;
 }
 
+function changeItem(banner,direccion){
+    console.info('change order...')
+    var items = banner.elementBanner.getElementsByClassName('item-banner');
+    var index = parseInt(findActive(items));
+    var position = index + 1;
+    
+    if(position < 0){
+        position = items.length -1;
+    }else if(position >= items.length){
+        position = 0;
+    }
+
+    items[index].classList.remove('active');
+    items[index].classList.add('left');
+
+    items[position].classList.add('active');
+    items[position].classList.remove('right');
+
+    items[position].addEventListener('transitionend',function(){
+        items[index].classList.remove('left');
+        items[index].classList.add('right');
+        createTimeOut(banner.time,banner);
+    },{
+        once:true
+    });
+}
+
+function findActive(items){
+    return Object.keys(items).find(function(key){
+        return Object.keys(items[key].classList).find(function(i){
+            return items[key].classList[i] == 'active';
+        });
+    });
+}
