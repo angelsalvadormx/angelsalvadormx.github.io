@@ -76,4 +76,4 @@ function findActive(items){
             return items[key].classList[i] == 'active';
         });
     });
-}
+} 
