@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # I'm Full stack Developer 
 
 #### [Angel Salvador](https://angelsalvadormx.coddy.com.mx/)
@@ -10,3 +11,6 @@
 - [Circle](https://angelsalvadormx.github.io/proyectos/loader-css-html-js/circle/)
 - [hexagon](https://angelsalvadormx.github.io/proyectos/loader-css-html-js/hexagon/)
 - [Rain](https://angelsalvadormx.github.io/proyectos/loader-css-html-js/rain/)
+=======
+# btn_animation
+>>>>>>> 36a4f8c6bd8e07d759ce6b137c4a64ac0a70a41e
