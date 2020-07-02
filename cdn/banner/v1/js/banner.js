@@ -58,6 +58,14 @@ function next(banner){
 }
 
 function previous(banner){
+    if(banner.allowChange === true){
+        clearTimeout(banner.await);
+        banner.await = setTimeout(function(){
+            banner.allowChange = true;
+            createTimeOut(banner.time,banner);
+        },banner.time);
+    }
+    banner.allowChange = false;
     changeItem(banner,'previous');
 }  
 
