@@ -40,10 +40,10 @@
     background-color: #24b662;
 }
 
-.btn-white-aqua::before,
-.btn-white-aqua{
-    border-color: #FFF;
-    background-color: #24e3ec;
+.btn-white-dark::before,
+.btn-white-dark{
+    border-color: #ffffff;
+    background-color: #242d2e;
     color: #FFF;
 }
 
