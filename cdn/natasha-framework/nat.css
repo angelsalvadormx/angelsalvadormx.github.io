@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5 {
   text-align: center;
 }
 
+/* Text Color  */
 .text-primary {
   color: rgb(100, 255, 218);
   margin: 0px 0px 20px 3px;
@@ -78,8 +79,12 @@ h1, h2, h3, h4, h5 {
 }
 
 /*Color background*/
-.bkg-color-white{
-  background-color: #FFF;
+.bg-white {
+  background-color: white
+}
+
+.bg-sliver {
+  background-color: #cdcdcd;
 }
 /* Center */
 
@@ -91,6 +96,10 @@ h1, h2, h3, h4, h5 {
 .center-y{
   top: 50%;
   transform: translateY(-50%);
+}
+.center-x{
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .center-margin {
@@ -107,8 +116,8 @@ h1, h2, h3, h4, h5 {
   color: rgb(204, 214, 246)
 }
 
-.t-color-white {
-  color: #FFF!important;
+.txt-white {
+  color: #FFF !important;
 }
 
 .t-color-black {
@@ -133,6 +142,9 @@ h1, h2, h3, h4, h5 {
   position: absolute;
 }
 
+.position-sticky {
+  position: sticky;
+}
 /* Font-size */
 
 .t-size-13 {
