@@ -2,12 +2,18 @@
  Autor: Angel Salvador
  @angelsalvadormx
 */
-
-html, body {
-  height: 100%;
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -18,44 +24,13 @@ h1 {
   letter-spacing: -0.075rem;
 }
 
-.description{
-  color: rgba(255,255,255,0.78);
-  letter-spacing: 0.025rem;
-  width: calc(100% + 0.025rem);
-  font-size: 1em;
-  line-height: 2;
-  font-weight: 300;
-}
-.container{
-  padding: 0 6em;
-}
-.divider{
-  width: 15%;
-  height: 5px;
-  margin: 20px 0;
-}
-.divider-c-yellow{
-  background-color: yellow;
 }
 .divider-c-green{
   background-color: #00FFD1;
-}
+}*/
 
 
-/* Home */
-#home {
-  /*
-    background-color: #1f0735;
-  */
-  border-bottom: 10px solid yellow;
-}
-#home main h1{
-  text-shadow: 3px 3px 7px rgba(0,0,0,.7);
-  letter-spacing: 2px;
-}
-#home main p{
-  text-shadow: 2px 2px 2px rgba(0,0,0,.7);
-}
+
 #banner .layer{
   display: none !important;
 }
@@ -73,7 +48,50 @@ h1 {
   background: linear-gradient(to top, rgba(43,50,94,0.2), rgba(43,50,94,0.2));
 }
 
-/* section */
-#sec-1{
-  border-bottom: 10px solid #00FFD1;
-} 
+
+/*display*/
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.aside-about-us{
+  background-color: #242d2e!important;
+  height: 90%;
+  right: 5%;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  padding: 60px 49px 60px 52px;
+}
+.aside-about-us h2{
+  text-transform: uppercase;
+  font-size: 44px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  font-family: Oswald, sans-serif !important;
+  padding-bottom: 40px !important;
+}
+.aside-about-us main{
+  line-height: 1.6;
+  color: #647072;
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+.aside-about-us main p{
+  margin-bottom: 20px;
+}
+#about-us{
+  height: 1000px;
+}

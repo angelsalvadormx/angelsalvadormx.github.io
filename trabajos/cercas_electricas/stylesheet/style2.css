@@ -1,0 +1,38 @@
+/*position*/
+.p-absolute {
+    position: absolute;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-fixed {
+    position: fixed;
+}
+
+.p-sticky {
+    position: sticky;
+}
+
+
+/*colors*/
+
+.bg-outer-space {
+    background: #242d2e;
+}
+
+
+
+.txt-nevada {
+    color: #647072;
+}
+
+.bg-gallery {
+    background-color: #efefef
+}
+
+.bg-mine-shaft {
+    background: #232323;
+}
+
