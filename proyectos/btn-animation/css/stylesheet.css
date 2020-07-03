@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/*display*/
+.d-flex{
+    display: flex;
+}
+.d-block{
+    display: block;
+}
+.d-grid{
+    display: grid;
+}
+.d-inline{
+    display: inline;
+}
+
+/*position*/
+.p-absolute{
+    position: absolute;
+}
+.p-relative{
+    position: relative;
+}
+.p-fixed{
+    position: fixed;
+}
+.p-sticky{
+    position: sticky;    
+}
+
+/* button */
+.btn{
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+.btn-sml{
+    width: 7.5em;
+    height: 2em;
+}
+.btn-med{
+    width: 15em;
+    height: 3em;
+}
+.btn-lg{
+    width: 20em;
+    height: 4em;
+}
+
+#btns-hover{
+    background-color: #0e83cd;
+    padding: 10px 20px;
+}
