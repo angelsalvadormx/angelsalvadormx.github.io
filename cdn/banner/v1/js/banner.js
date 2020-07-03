@@ -16,8 +16,6 @@ function setBanner(banner){
     var layer = createLayer();
     var itemBanner = null;
     var classPositon = 'active';
-    banner.allowClick = true;
-    banner.allowChange = true;
     banner.elementBanner = document.getElementById(banner.id);
     banner.elementBanner.classList.add('banner');    
     banner.elementBanner.insertAdjacentElement('afterbegin',layer);
@@ -28,46 +26,8 @@ function setBanner(banner){
         itemBanner = createItemBanner(item.image,classPositon);
         banner.elementBanner.insertAdjacentElement('beforeend',itemBanner);
     });
-
-    if(banner.buttons === true){
-        var btn_next = createButton('btn_next',banner.id,function(){
-            next(banner);
-        });
-        banner.elementBanner.appendChild(btn_next);
-        
-        var btn_previous = createButton('btn_previous',banner.id,function(){
-            previous(banner);
-        });
-        banner.elementBanner.appendChild(btn_previous);
-    }
     return banner;
 }
-function next(banner){
-    if(banner.allowChange === true){
-        clearTimeout(banner.await);
-        banner.await = setTimeout(function(){
-            banner.allowChange = true;
-            createTimeOut(banner.time,banner);
-        },banner.time);
-    }
-    banner.allowChange = false;
-    if(banner.allowClick === true){
-        changeItem(banner,'next');
-    }
-
-}
-
-function previous(banner){
-    if(banner.allowChange === true){
-        clearTimeout(banner.await);
-        banner.await = setTimeout(function(){
-            banner.allowChange = true;
-            createTimeOut(banner.time,banner);
-        },banner.time);
-    }
-    banner.allowChange = false;
-    changeItem(banner,'previous');
-}  
 
 function createButton(cssClass,banner,fnClick){
     var button = document.createElement('i');
@@ -91,19 +51,13 @@ function createLayer(){
     return layer;
 }
 
-function changeItem(banner,direction){
-    if(direction.length > 0){
-        banner.allowClick = false;
-    }
+function changeItem(banner){
+    console.log('change');
+    
     var items = banner.elementBanner.getElementsByClassName('item-banner');
     var index = parseInt(findActive(items));
-    var position = index;
+    var position = index + 1;
 
-    if(direction === 'previous'){
-        position--;
-    }else if(direction === 'next' || direction.length === 0){
-        position++;
-    }
     
     if(position < 0){
         position = items.length -1;
@@ -120,10 +74,7 @@ function changeItem(banner,direction){
     items[position].addEventListener('transitionend',function(){
         items[index].classList.remove('left');
         items[index].classList.add('right');
-        if(banner.allowClick === true && banner.allowChange == true){
-            createTimeOut(banner.time,banner);
-        }
-        banner.allowClick = true;
+        createTimeOut(banner.time,banner);
     },{
         once:true
     });
