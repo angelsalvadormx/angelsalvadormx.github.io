@@ -65,6 +65,13 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Text Color  */
+.txt-white {
+  color: #FFF !important;
+}
+
+.txt-black {
+  color: #000 !important;
+}
 .text-primary {
   color: rgb(100, 255, 218);
   margin: 0px 0px 20px 3px;
@@ -116,13 +123,7 @@ h1, h2, h3, h4, h5 {
   color: rgb(204, 214, 246)
 }
 
-.txt-white {
-  color: #FFF !important;
-}
 
-.t-color-black {
-  color: #000 !important;
-}
 
 /* Position */
 
