@@ -1,0 +1,54 @@
+/*
+    Autor: Angel Salvador
+    @angelsalvadormx
+*/
+
+/* 
+    Border radious 
+    -----------------------------------
+*/
+.btn-b-r{
+    border-radius: 50px;
+}
+/* 
+    Colors 
+    ----------------------------------- 
+    fist border color (white)
+    secund background color (blue) 
+*/
+.btn-white-blue{
+    border-color: #FFF;
+    color: #FFF;
+    background-color: #0e83cd;
+}
+
+.btn-white-blue:after{
+    background-color: #FFF;
+}
+.btn-white-blue:active,
+.btn-white-blue:hover{
+    color: #0e83cd;
+}
+
+.btn-white-green{
+    border-color: #FFF;
+    color: #FFF;
+    background-color: #2ecc71;
+}
+.btn-white-green:active,
+.btn-white-green:hover{
+    background-color: #24b662;
+}
+
+.btn-white-aqua::before,
+.btn-white-aqua{
+    border-color: #FFF;
+    background-color: #24e3ec;
+    color: #FFF;
+}
+
+.btn-white-purple{
+    background-color: #3851bc;
+    border-color: #FFF;
+    color: #FFF;
+}

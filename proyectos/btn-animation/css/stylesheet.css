@@ -59,3 +59,22 @@ html,body{
     background-color: #0e83cd;
     padding: 10px 20px;
 }
+#btns-arrows{
+    background-color: #2ecc71;
+    padding: 10px 20px;
+}
+#btns-actinos{
+    background-color: aqua;
+    padding: 10px 20px;
+
+}
+#btns-splash{
+    background-color: #3851bc;
+    padding: 10px 20px;
+}
+.btn-mail{
+    width: 75px !important;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 50%;
+}
