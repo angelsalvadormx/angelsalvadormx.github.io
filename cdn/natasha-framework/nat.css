@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5 {
   padding: 0px 40px;
 }
 
-/* Background */
+/* Background image */
 
 .bkg-image {
   background-repeat: no-repeat;
@@ -97,6 +97,7 @@ h1, h2, h3, h4, h5 {
 .bg-sliver {
   background-color: #cdcdcd;
 }
+
 /* Center */
 
 .center {
@@ -121,6 +122,9 @@ h1, h2, h3, h4, h5 {
 
 .bg-primary {
   background-color: #0a192f;
+}
+.bg-secondary {
+  background-color: #242d2e;
 }
 
 .t-color-primary {
