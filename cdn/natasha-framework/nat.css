@@ -134,7 +134,13 @@ h1, h2, h3, h4, h5 {
   color: #647072;
 }
 
-
+.layer{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+}
 
 /* Position */
 
