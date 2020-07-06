@@ -45,7 +45,9 @@ h1, h2, h3, h4, h5 {
 .bkg-image-cover {
   background-size: cover;
 }
-
+.bkg-image-contain{
+  background-size: contain;
+}
 .bkg-image-fixed{
   background-attachment: fixed;
 }
