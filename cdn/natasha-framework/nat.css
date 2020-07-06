@@ -319,6 +319,9 @@ h1, h2, h3, h4, h5 {
 .w-70{
   width: 70% !important;
 }
+.w-60{
+  width: 60% !important;
+}
 .w-50 {
   width: 50% !important;
 }
