@@ -92,12 +92,18 @@
     transform: translateY(70px);
   }
   #about-us > main{
+    display: none!important;
     top: 0% !important;
     transform: translateY(80px);
   }
   #about-us{
     height: inherit;
   }
+  .services > article{
+    height: 450px !important;
+    width: 350px;
+  }
+  
 }
 
 @media screen and (max-width:500px){
@@ -106,9 +112,6 @@
     height: max-content;
     padding-top: 30px !important;
     padding-bottom: 30px !important;
-  }
-  #about-us > main{
-    display: none!important;
   }
   #about-us .aside-about-us{
     transform: translateY(0px) !important;
@@ -120,6 +123,9 @@
   }
   .aside-about-us main p{
     font-size: 15px;
+  }
+  .portfolio-img picture{
+    width: 350px;
   }
   footer .title,
   #footer-website section {

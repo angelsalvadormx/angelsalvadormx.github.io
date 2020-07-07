@@ -98,3 +98,12 @@
 .icon-home:before {
   content: "\74";
 }
+.icon-screen-full:before {
+  content: "\75";
+}
+.icon-expand:before {
+  content: "\76";
+}
+.icon-arrows-alt:before {
+  content: "\77";
+}
