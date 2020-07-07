@@ -1,0 +1,36 @@
+@media (max-width: 450px){
+  #home{
+      height: 700px !important;
+    }
+    #article{
+      height: 100% !important;
+    }
+    .main-title,.section-position,.gallery{
+      padding: 0 4em !important;
+    }
+    h1,h2{
+      font-size: 2em;
+    }
+    p,.description{
+      font-size: 1.2em !important;
+      line-height: 1.7;
+      
+    }
+    .w-70{
+      width: 100% !important;
+    }
+    .main-2{
+        position: relative !important;
+    }
+    .t-color-black {
+      color: #fff !important;
+    }
+    #banner2,.section-position,.main-3{
+        width: 100% !important;
+    }
+    .section-position{
+        position: absolute !important;
+        z-index: 3;
+        background-color: transparent !important;
+    }
+}

@@ -2,6 +2,9 @@
  Autor: Angel Salvador
  @angelsalvadormx
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +17,7 @@ body {
   width: 100%;
   margin: 0;
 }
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -24,40 +28,57 @@ h1 {
   letter-spacing: -0.075rem;
 }
 
+.form-contact input, 
+.form-contact textarea{
+  border: none;
+  border-radius: 3px !important;
+  margin-top: 20px !important;
 }
-.divider-c-green{
-  background-color: #00FFD1;
-}*/
-
-
-
-#banner .layer{
+.form-contact textarea{
+  resize: none;
+  font: 400 13.3333px Arial;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.form-contact input{
+  height: 39px;
+  padding: 5px;
+  padding: 15px;
+}
+.form-contact button{
+  padding: 14px 40px;
+  background-color: #242d2e;
+  border-color: #efefef;
+}
+.form-contact button:hover{
+  color: #242d2e;
+}
+.form-contact .btn-send{
+  border-color: #FFF;
+}
+.form-contact h2{
+  font-size: 30px !important;
+}
+#banner .layer {
   display: none !important;
 }
+
 #home main p {
   font-size: 1.25em;
 }
 
-/*layer*/
-
-.layer {
-  /* background-color: rgba(65, 32, 109, 0.27); */
-  background-color: rgba(32, 30, 82, 0.2);
-}
-.layer-green{
-  background: linear-gradient(to top, rgba(43,50,94,0.2), rgba(43,50,94,0.2));
+.header-sections{
+  font-family: Oswald, sans-serif !important;
+  font-size: 35px;
+  margin-bottom: 50px;
+  letter-spacing: 0.1em;
 }
 
+.layer-green {
+  background: linear-gradient(to top, rgba(43, 50, 94, 0.2), rgba(43, 50, 94, 0.2));
+}
 
 /*display*/
-.d-flex {
-  display: flex;
-}
-
-.d-block {
-  display: block;
-}
-
 .d-grid {
   display: grid;
 }
@@ -66,14 +87,89 @@ h1 {
   display: inline;
 }
 
-.aside-about-us{
-  background-color: #242d2e!important;
-  height: 90%;
+#home{
+  height: 600px;
+}
+
+
+#portfolio {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+/*top header*/
+
+
+#logo {
+  background-image: url('../images/logo/cercas_electricas.png');
+  height: 95px;
+  width: 115px;
+  top: -34px;
+}
+
+
+.social-media{
+  background-color: #1d2425;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+.social-media i{
+  font-size: 18px;
+  margin-left: 12px;
+}
+.social-media li span {
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.contact-info {
+  width: 20%;
+  left: 66%;
+}
+
+/*header*/
+#header {
+  height: 80px;
+}
+
+/*home*/
+#banner {
+  min-height: 600px !important;
+}
+
+.home-info {
+  padding: 4em;
+}
+
+.home-info>article {
+  top: 26%;
+  left: 9%;
+}
+
+.home-info>form {
+  width: 355px;
+  margin-left: 22%;
+  padding: 20px;
+}
+
+
+
+
+
+form>input {
+  height: 30px;
+}
+
+/*about us*/
+.aside-about-us {
+  background-color: #242d2e !important;
+  height: 80%;
   right: 5%;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   padding: 60px 49px 60px 52px;
 }
-.aside-about-us h2{
+
+.aside-about-us h2 {
   text-transform: uppercase;
   font-size: 44px;
   line-height: 1.5;
@@ -81,7 +177,8 @@ h1 {
   font-family: Oswald, sans-serif !important;
   padding-bottom: 40px !important;
 }
-.aside-about-us main{
+
+.aside-about-us main {
   line-height: 1.6;
   color: #647072;
   font-family: Roboto;
@@ -89,9 +186,105 @@ h1 {
   font-style: normal;
   font-size: 18px;
 }
-.aside-about-us main p{
+
+.aside-about-us main p {
   margin-bottom: 20px;
 }
-#about-us{
+
+#about-us {
   height: 1000px;
+}
+
+/*services*/
+#our-services{
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.bolt::before,
+.bolt::after{
+  top: 50%;
+  transform: translateY(-50%);
+  content: '';
+  width: 160px;
+  height: 2px;
+  background-color: #d9d9d9;
+  position: absolute;
+  display: block;
+}
+.bolt::before {
+  right: 50%;
+}
+
+.bolt::after {
+  left: 50%;
+}
+
+.bolt>i {
+  font-size: 27px;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  color: #be2b0b;
+}
+
+.services > article {
+  height: 600px;
+  margin: 0 25px 25px;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 400px;
+}
+
+.services > article > h2 {
+  bottom: 85px;
+}
+
+.alarm {
+  background-position: center;
+}
+
+/*portafolio*/
+.portfolio-img picture {
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 4px;
+}
+/*img transicion*/
+#img-transicion {
+  height: 400px;
+}
+
+.background-image {
+  background-attachment: fixed;
+  display: block;
+  background-position: top;
+}
+
+/*footer*/
+
+footer > main{
+  padding: 50px 0;
+}
+.social-media-footer {
+  height: 50px;
+}
+
+#footer-content{
+  width: 600px;
+}
+footer .title,
+footer h2{
+  font-family: Oswald, sans-serif !important;
+  font-size: 35px;
+  letter-spacing: 0.1em;
+  margin-bottom: 30px;
+}
+
+footer .title{
+  width: 500px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-top: 20px;
 }

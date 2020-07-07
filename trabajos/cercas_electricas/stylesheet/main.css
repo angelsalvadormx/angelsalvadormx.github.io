@@ -1,67 +1,7 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/*@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300&display=swap');*/
 
 /*icons*/
-i{
-    font-size: 22px;
-    margin: 0 11px;
-}
-
-/*top header*/
-#top-menu{
-    height: 45px;
-    padding: .6em;
-}
-
-#logo{
-    background-image: url('../images/logo/cercas_electricas.png');
-    height: 95px;
-    width: 115px;
-    top: -34px;
-}
-ul{
-    list-style-type: none;
-}
-li{
-    padding: 4px;
-}
-
-span{
-    font-size: 14px;
-}
-.social-media{
-    width: 15%;
-    left: 15%;
-}
-.contact-info{
-    width: 20%;
-    left: 66%;
-}
-
-
-/*header*/
-#header{
-    height: 80px;
-}
-
-/*home*/
-#banner{
-    min-height: 500px !important;
-}
-#home{
-    height: 500px;
-}
-.home-info{
-    padding: 4em;
-}
-form{
-    width: 355px;
-    margin-left: 15%;
-    padding: 20px;
-}
-form>input{
-    height: 30px;
-}
 
 
