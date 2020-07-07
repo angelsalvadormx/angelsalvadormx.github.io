@@ -35,7 +35,7 @@
           <!-- icon Gmail -->
           <li><a href="mailto:angelfierro80mx@gmail.com" class="txt-white"> <i class="icon-envelope"></i></a></li>
           <li>
-            <a href="tel:3315461810" class="txt-white d-flex align-items-center"><i class="icon-phone d-flex align-items-center"></i><span>33-1546-1810</span></a>
+            <a href="tel:3315461810" class="txt-white d-flex align-items-center" id="tel"><i class="icon-phone d-flex align-items-center"></i><span>33-1546-1810</span></a>
           </li>
         </ul>
       </li>
@@ -75,7 +75,7 @@
         <input name="correo" type="email" placeholder="Correo electronico">
         <textarea name="msg" cols="30" rows="5" placeholder="Descripcion sobre el trabajo"></textarea>
         <div class="d-flex justify-content-center">
-          <button class="btn-animation btn-white-blue btn-hover-slash w-60 m-0">Enviar</button>
+          <button class="btn-animation btn-white-blue btn-hover-slash w-60 m-0" type="button">Enviar</button>
         </div>
       </form>
     </div>
@@ -101,7 +101,7 @@
   <section id="our-services" class="container">
     <header class="header-sections"> 
       <h2 class="text-center txt-mine-shaft">Nuestros Servicios</h2>
-      <span class="bolt position-relative w-100 justify-content-center d-flex">
+      <span class="bolt position-relative w-100 justify-content-center d-flex overflow-h">
         <i class="icon-bolt z-index bg-white"></i>
       </span>
     </header>
@@ -124,13 +124,15 @@
   <section id="portfolio" class="container bg-wild-sand">
     <header class="header-sections"> 
       <h2 class="text-center txt-mine-shaft">Nuestro Portafolio</h2>
-      <span class="bolt position-relative w-100 justify-content-center d-flex">
+      <span class="bolt position-relative w-100 justify-content-center d-flex overflow-h">
         <i class="icon-bolt z-index bg-wild-sand"></i>
       </span>
     </header>
     <main class="portfolio-img d-flex justify-content-center flex-wrap">
       <picture class="bkg-image bkg-image-center bkg-image-cover"
         style="background-image: url(./images/portafolio/20200609_131715.jpg);"></picture>
+      <picture class="bkg-image bkg-image-center bkg-image-cover"
+        style="background-image: url(./images/electric-fence.jpg);"></picture>
       <picture class="bkg-image bkg-image-center bkg-image-cover"
         style="background-image: url(./images/portafolio/IMG_20200125_123935061_HDR.jpg);"></picture>
       <picture class="bkg-image bkg-image-center bkg-image-cover"
@@ -146,7 +148,7 @@
     </main>
   </section>
   <!--footer-->
-  <footer class="bg-mine-shaft w-100">
+  <footer class="bg-mine-shaft w-100" id="footer-website">
     <main class="w-100 d-flex justify-content-around">
       <section class="w-50 d-flex align-items-center flex-direction-column justify-content-center">
         <picture class="bkg-image bkg-image-center bkg-image-contain d-block w-35 h-35" style="background-image: url(./images/logo/cercas_electricas.png);"></picture>
@@ -160,7 +162,7 @@
           <input name="correo" type="email" placeholder="Correo electronico">
           <textarea name="msg" cols="30" rows="5" placeholder="Descripcion sobre el trabajo"></textarea>
           <div class="d-flex justify-content-center">
-            <button class="btn-send btn-animation btn-white-blue btn-hover-slash w-60 m-0">Enviar</button>
+            <button  type="button" class="btn-send btn-animation btn-white-blue btn-hover-slash w-60 m-0">Enviar</button>
           </div>
         </form>
       </aside>
