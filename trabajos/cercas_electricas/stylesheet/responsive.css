@@ -124,7 +124,7 @@
   .aside-about-us main p{
     font-size: 15px;
   }
-  .portfolio-img picture{
+  .portfolio-img .item-portfolio{
     width: 350px;
   }
   footer .title,
