@@ -147,3 +147,10 @@
     display: none;
   }
 }
+
+@media screen and (max-width:400px){
+  .img-back{
+    width: 338px !important;
+    height: 400px !important;
+  }
+}

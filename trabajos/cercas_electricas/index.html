@@ -72,7 +72,7 @@
           y
           alarmas GMS</p>
       </article>
-      <form class="h-90 d-flex justify-content-center flex-direction-column bg-gallery form-contact" action="">
+      <form class="d-flex justify-content-center flex-direction-column bg-gallery form-contact" action="">
         <h2 class="txt-black m-0">Cont&aacute;ctanos</h2>
         <input name="name" type="text" placeholder="Nombre">
         <input name="phone" type="text" placeholder="Numero de telefono">
@@ -200,7 +200,7 @@
       </section>
       <aside id="footer-content" class="d-flex container flex-direction-column align-items-center">
         <h2 class="txt-white text-center">Cont&aacute;ctanos</h2>
-        <form action="" class="form-contact d-flex flex-direction-column w-70">
+        <form class="form-contact d-flex flex-direction-column w-70">
           <input name="name" type="text" placeholder="Nombre">
           <input name="phone" type="text" placeholder="Numero de telefono">
           <input name="correo" type="email" placeholder="Correo electronico">
@@ -235,9 +235,10 @@
     </nav>
   </footer>
 <!--img gallery lightbox squleton-->
-  <div id="background">
-    <span id="close">&times;</span>
-    <div class="img-back"></div>
+  <div id="background" class="h-100 w-100 position-fixed d-none">
+    <div class="img-back position-relative w-70 h-90 bkg-image bkg-image-cover bkg-image-center ">
+      <span id="close" class="position-absolute d-flex justify-content-center align-items-center">&times;</span>
+    </div>
 </div>
   <!-- Banner -->
   <script src="https://angelsalvadormx.github.io/cdn/banner/v1/js/banner.js"></script>
