@@ -1,4 +1,4 @@
-# Juego-de-la-vida-JS
+# Juego de la vida con JavaScript
 
 ## Configuración
 
