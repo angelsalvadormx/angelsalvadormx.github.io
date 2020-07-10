@@ -96,14 +96,6 @@ h1, h2, h3, h4, h5 {
   color: rgb(136, 146, 176);
 }
 
-/*Color background*/
-.bg-white {
-  background-color: white
-}
-
-.bg-sliver {
-  background-color: #cdcdcd;
-}
 
 /* Center */
 
@@ -125,8 +117,14 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
 }
 
-/* Colors primary */
+/*Color background*/
+.bg-white {
+  background-color: white
+}
 
+.bg-sliver {
+  background-color: #cdcdcd;
+}
 .bg-primary {
   background-color: #0a192f;
 }
@@ -134,7 +132,7 @@ h1, h2, h3, h4, h5 {
   background-color: #242d2e;
 }
 .bg-highlight{
-  background-color: #f8f9fa;
+  background-color: #effcff;
 }
 .txt-primary {
   color: rgb(204, 214, 246)
