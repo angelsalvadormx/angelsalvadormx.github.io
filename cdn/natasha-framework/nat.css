@@ -128,7 +128,9 @@ h1, h2, h3, h4, h5 {
 .bg-secondary {
   background-color: #242d2e;
 }
-
+.bg-highlight{
+  background-color: #f8f9fa;
+}
 .txt-primary {
   color: rgb(204, 214, 246)
 }
@@ -142,6 +144,20 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,.3);
+}
+
+/* Code style */
+.tag{
+  color:#2f6f9f;
+}
+.na {
+  color: #006ee0;
+}
+.s {
+  color: #d73038;
+}
+.comment{
+  color: #ce9178;
 }
 
 /* Position */
