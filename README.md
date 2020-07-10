@@ -11,6 +11,9 @@
 ### Creative Button Styles 
 [Get started](https://angelsalvadormx.github.io/proyectos/btn-animation/)
 
+### Game of Life
+[play](https://angelsalvadormx.github.io/proyectos/juego_de_la_vida/)
+
 ### Fun Animations
 - [3D Cube](https://angelsalvadormx.github.io/proyectos/animations-css/cube/cube_3D.html)
 
