@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: angelsalvadormx.github.io
+Token: 6ef1e9cca4b17525a2cfa47251ea82597eb0a32d9d2255129eef9e2e7e5ac2ca
