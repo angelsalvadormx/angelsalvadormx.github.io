@@ -18,6 +18,7 @@ body,
     color: #11001C;
     padding: 10px;
     font-weight: bold;
+    z-index: 2;
 }
 
 .alert span {
@@ -29,13 +30,16 @@ body,
     height: 100px;
     z-index: 2;
 }
+
 #contact,
 #home {
     min-height: 100%;
 }
+
 #about {
-    margin-bottom:60px; 
+    margin-bottom: 60px;
 }
+
 .aside-social-media i {
     font-size: 20px;
     padding: 0 1em;
@@ -119,20 +123,25 @@ body,
 #experience>main {
     padding-top: 40px;
 }
+
 #experience article {
     margin-left: 55px;
     margin-bottom: 30px;
 }
-#experience .date-experience{
+
+#experience .date-experience {
     margin-bottom: 10px
 }
-#experience .desc-experience{
+
+#experience .desc-experience {
     max-width: 750px;
 }
 
-.btn-contact{
+.btn-contact {
     width: max-content;
 }
+
+
 /* .title-sect::after {
     content: "";
     display: block;
@@ -143,70 +152,75 @@ body,
     transform: translateY(-50%);
     right: -111%;
 } */
-@media screen and (min-width:1400px){
-    #about main{
+
+@media screen and (min-width:1400px) {
+    #about main {
         justify-content: center;
     }
 }
 
-@media screen and (max-width:700px){
-    #about > article{
-        flex-direction:  column; 
+@media screen and (max-width:700px) {
+    #about>article {
+        flex-direction: column;
     }
-    #about > article > aside {
+    #about>article>aside {
         width: 100%;
     }
-    #about > article > main{
+    #about>article>main {
         width: 100%;
         justify-content: center;
         margin-top: 40px;
     }
 }
-@media screen and (max-width:600px){
-    .title-sect{
-        font-size: 30px;   
+
+@media screen and (max-width:600px) {
+    .title-sect {
+        font-size: 30px;
     }
-    .text-primary{
+    .text-primary {
         font-size: 13px;
     }
-    #home h2{
+    #home h2 {
         font-size: 50px;
     }
-    #home h3{
+    #home h3 {
         font-size: 45px;
     }
-    .aside-social-media a{
+    .aside-social-media a {
         padding: 1em .5em;
     }
-    .section{
+    .section {
         padding-left: 55px;
     }
 }
+
 @media (max-width:500px) {
     #header {
         display: none !important;
     }
+    #experience article{
+       margin-left: 0px;
+        
+    }
 }
-@media screen and (max-width:400px){
-    .aside-social-media{
+
+@media screen and (max-width:400px) {
+    .aside-social-media {
         margin-left: 0;
     }
-    .aside-social-media a{
+    .aside-social-media a {
         padding: 1em 0;
     }
-    .section{
+    .section {
         padding-left: 25px;
     }
-      .title-sect{
-        font-size: 25px;   
+    .title-sect {
+        font-size: 25px;
     }
-    .text-primary{
+    .text-primary {
         font-size: 11px;
     }
-    #experience article{
-        margin-left: 10px;
-    }
-    #experience .date-experience{
+    #experience .date-experience {
         font-size: 10px
     }
 }
