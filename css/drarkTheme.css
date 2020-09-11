@@ -1,0 +1,19 @@
+.bg-primary {
+    background-color: #11001C;
+}
+
+.txt-primary {
+    color: #48BF84;
+}
+
+.txt-secondary {
+    color: rgb(136, 146, 176);
+}
+
+.border-primary {
+    border-color: #48BF84;
+}
+
+.line-sect-color:after {
+    background-color: #0EB1D2;
+}
