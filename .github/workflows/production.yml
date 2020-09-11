@@ -15,5 +15,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
         ftp-server: ftp.coddy.com.mx
-        ftp-username: cotizador@cotizador.coddy.com.mx
+        ftp-username: angelsalvadormx@angelsalvadormx.dev
         ftp-password: ${{ secrets.FTP_PASSWORD_PROD }} 
