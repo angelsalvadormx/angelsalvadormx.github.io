@@ -313,6 +313,10 @@ h5 {
     height: 100%;
 }
 
+.h-max-content {
+    height: max-content;
+}
+
 @media (max-width:900px) {
     .t-size-80 {
         font-size: 70px;
