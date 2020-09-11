@@ -31,7 +31,6 @@ body,
     z-index: 2;
 }
 
-#contact,
 #home {
     min-height: 100%;
 }
@@ -198,9 +197,11 @@ body,
     #header {
         display: none !important;
     }
-    #experience article{
-       margin-left: 0px;
-        
+    #experience article {
+        margin-left: 0px;
+    }
+    .container {
+        padding: 0px 25px;
     }
 }
 
