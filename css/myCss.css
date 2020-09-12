@@ -191,6 +191,9 @@ body,
     .section {
         padding-left: 55px;
     }
+    #experience article{
+        margin-left: 20px;
+    }
 }
 
 @media (max-width:500px) {
