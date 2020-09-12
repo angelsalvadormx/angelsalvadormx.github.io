@@ -71,6 +71,7 @@ body,
 .list-skills {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
+    overflow: hidden;
 }
 
 .list-skills i {
@@ -175,6 +176,7 @@ body,
 @media screen and (max-width:600px) {
     .title-sect {
         font-size: 30px;
+        left: -15px;
     }
     .text-primary {
         font-size: 13px;
@@ -220,7 +222,7 @@ body,
         padding: 1em 0;
     }
     .section {
-        padding-left: 25px;
+        padding-left: 50px; 
     }
     .title-sect {
         font-size: 25px;
