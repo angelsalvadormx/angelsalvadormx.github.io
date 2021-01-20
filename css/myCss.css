@@ -39,6 +39,9 @@ body,
     margin-bottom: 60px;
 }
 
+#about aside{
+    margin-left: 20px;
+}
 .aside-social-media i {
     font-size: 20px;
     padding: 0 1em;
@@ -125,7 +128,7 @@ body,
 }
 
 #experience article {
-    margin-left: 55px;
+    margin-left: 20px;
     margin-bottom: 30px;
 }
 

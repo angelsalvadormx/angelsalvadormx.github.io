@@ -1,5 +1,5 @@
 # Hi there!
-## I'm [Angel Salvador](https://angelsalvadormx.coddy.com.mx/) Full stack Developer
+## I'm [Angel Salvador](https://angelsalvadormx.dev/) Full stack Developer
 
 [My CV](https://angelsalvadormx.github.io/curriculum/index.html)
 * Only desktop version
